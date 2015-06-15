@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mendeleiev</title>
+		<style>
+			body {font-size: 20px; background-image: url(http://imperor.net/wp-content/uploads/2015/02/713737253-e1422858113935-1440x564_c.jpg) ; background-repeat: no-repeat; background-color: #000; background-position: 0 top;}
+			table {border-collapse: collapse;}
+			td {width: 5%; padding: 0;}
+			.elems {width: 100%;}
+			.elem { padding : 2px 2px 0px 2px; border: 1px solid #7C7C7C;}
+			.name {text-align: center;font-size: 2em; font-weight: bold;}
+			.num {text-align: left; font-size: 0.7em;}
+			.weight {padding-left: 2px; text-align: right; font-size: 0.7em; font-style: italic}
+
+			.non_metal {background-color: #B4BBA1;}
+			.metal_alcalin {background-color: #C4C4C4;}
+			.metal_alcalin_terreux {background-color: #C4B89E;}
+			.metal_transmition {background-color: #E5DEC5;}
+			.metal_pauvre {background-color: #E2E3DF;}
+			.metalloide {background-color: #E3CFC8;}
+			.halogene {background-color: #F4F0CA;}
+			.gaz_noble {background-color: #DEF0F1;}
+			.lanthanide {background-color: #CCC5D5;}
+			.actinide {background-color: #E9DDEA;}
+		</style>
+	</head>
+	<body>
+		<table class="elems">
+			<tr>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">1.00794</div>
+						<div class="name">H</div>
+						<div class="num">1</div>
+					</div>
+				</td>
+				<td colspan="16"></td>    
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">4.0026</div>
+						<div class="name">He</div>
+						<div class="num">2</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">6.941</div>
+						<div class="name">Li</div>
+						<div class="num">3</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">9.01218</div>
+						<div class="name">Be</div>
+						<div class="num">4</div>
+					</div>
+				</td>
+				<td colspan="10"></td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">10.811</div>
+						<div class="name">B</div>
+						<div class="num">5</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal" >
+						<div class="weight">12.0107</div>
+						<div class="name">C</div>
+						<div class="num">6</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">14.0067</div>
+						<div class="name">N</div>
+						<div class="num">7</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">15.9994</div>
+						<div class="name">O</div>
+						<div class="num">8</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">18.9984</div>
+						<div class="name">F</div>
+						<div class="num">9</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">20.1797</div>
+						<div class="name">Ne</div>
+						<div class="num">10</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">22.9898</div>
+						<div class="name">Na</div>
+						<div class="num">11</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">24.305</div>
+						<div class="name">Mg</div>
+						<div class="num">12</div>
+					</div>
+				</td>
+				<td colspan="10"></td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">26.9815</div>
+						<div class="name">Al</div>
+						<div class="num">13</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">28.0855</div>
+						<div class="name">Si</div>
+						<div class="num">14</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">30.9738</div>
+						<div class="name">P</div>
+						<div class="num">15</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">32.065</div>
+						<div class="name">S</div>
+						<div class="num">16</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">35.453</div>
+						<div class="name">Cl</div>
+						<div class="num">17</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">39.948</div>
+						<div class="name">Ar</div>
+						<div class="num">18</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">39.0983</div>
+						<div class="name">K</div>
+						<div class="num">19</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">40.078</div>
+						<div class="name">Ca</div>
+						<div class="num">20</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">44.9559</div>
+						<div class="name">Sc</div>
+						<div class="num">21</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">47.867</div>
+						<div class="name">Ti</div>
+						<div class="num">22</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">50.9415</div>
+						<div class="name">V</div>
+						<div class="num">23</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">51.9961</div>
+						<div class="name">Cr</div>
+						<div class="num">24</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">54.9380</div>
+						<div class="name">Mn</div>
+						<div class="num">25</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">55.845</div>
+						<div class="name">Fe</div>
+						<div class="num">26</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">58.9332</div>
+						<div class="name">Co</div>
+						<div class="num">27</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">58.6934</div>
+						<div class="name">Ni</div>
+						<div class="num">28</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">63.546</div>
+						<div class="name">Cu</div>
+						<div class="num">29</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">65,38</div>
+						<div class="name">Zn</div>
+						<div class="num">30</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">69.723</div>
+						<div class="name">Ga</div>
+						<div class="num">31</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">72.63</div>
+						<div class="name">Ge</div>
+						<div class="num">32</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">74.9216</div>
+						<div class="name">As</div>
+						<div class="num">33</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem non_metal">
+						<div class="weight">78.96</div>
+						<div class="name">Se</div>
+						<div class="num">34</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">79.904</div>
+						<div class="name">Br</div>
+						<div class="num">35</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">83.798</div>
+						<div class="name">Kr</div>
+						<div class="num">36</div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">85.4678</div>
+						<div class="name">Rb</div>
+						<div class="num">37</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">87.62</div>
+						<div class="name">Sr</div>
+						<div class="num">38</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">88.9058</div>
+						<div class="name">Y</div>
+						<div class="num">39</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">91.224</div>
+						<div class="name">Zr</div>
+						<div class="num">40</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">92.9064</div>
+						<div class="name">Nb</div>
+						<div class="num">41</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">95.96</div>
+						<div class="name">Mo</div>
+						<div class="num">42</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">98</div>
+						<div class="name">Tc</div>
+						<div class="num">43</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">101.107</div>
+						<div class="name">Ru</div>
+						<div class="num">44</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">102.905</div>
+						<div class="name">Rh</div>
+						<div class="num">45</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">106.42</div>
+						<div class="name">Pd</div>
+						<div class="num">46</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">107.868</div>
+						<div class="name">Ag</div>
+						<div class="num">47</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">112.411</div>
+						<div class="name">Cd</div>
+						<div class="num">48</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">114.818</div>
+						<div class="name">In</div>
+						<div class="num">49</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">118.71</div>
+						<div class="name">Sn</div>
+						<div class="num">50</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">121.76</div>
+						<div class="name">Sb</div>
+						<div class="num">51</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">127.6</div>
+						<div class="name">Te</div>
+						<div class="num">52</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">126.905</div>
+						<div class="name">I</div>
+						<div class="num">53</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">131.293</div>
+						<div class="name">Xe</div>
+						<div class="num">54</div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">132.905</div>
+						<div class="name">Cs</div>
+						<div class="num">55</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">137.327</div>
+						<div class="name">Ba</div>
+						<div class="num">56</div>
+					</div>
+				</td>
+				<td></td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">178.49</div>
+						<div class="name">Hf</div>
+						<div class="num">72</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">180.948</div>
+						<div class="name">Ta</div>
+						<div class="num">73</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">183,84</div>
+						<div class="name">W</div>
+						<div class="num">74</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">186.207</div>
+						<div class="name">Re</div>
+						<div class="num">75</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">190.23</div>
+						<div class="name">Os</div>
+						<div class="num">76</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">192.217</div>
+						<div class="name">Ir</div>
+						<div class="num">77</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">195.084</div>
+						<div class="name">Pt</div>
+						<div class="num">78</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">196.967</div>
+						<div class="name">Au</div>
+						<div class="num">79</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">200.59</div>
+						<div class="name">Hg</div>
+						<div class="num">80</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">204.383</div>
+						<div class="name">Tl</div>
+						<div class="num">81</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">207.2</div>
+						<div class="name">Pb</div>
+						<div class="num">82</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">208.98</div>
+						<div class="name">Bi</div>
+						<div class="num">83</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metalloide">
+						<div class="weight">209</div>
+						<div class="name">Po</div>
+						<div class="num">84</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">210</div>
+						<div class="name">At</div>
+						<div class="num">85</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">222</div>
+						<div class="name">Rn</div>
+						<div class="num">86</div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div class="elem metal_alcalin">
+						<div class="weight">223</div>
+						<div class="name">Fr</div>
+						<div class="num">87</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_alcalin_terreux">
+						<div class="weight">226</div>
+						<div class="name">Ra</div>
+						<div class="num">88</div>
+					</div>
+				</td>
+				<td></td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">266</div>
+						<div class="name">Rf</div>
+						<div class="num">104</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">268</div>
+						<div class="name">Db</div>
+						<div class="num">105</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">269</div>
+						<div class="name">Sg</div>
+						<div class="num">106</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">270</div>
+						<div class="name">Bh</div>
+						<div class="num">107</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">269</div>
+						<div class="name">Hs</div>
+						<div class="num">108</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">278</div>
+						<div class="name">Mt</div>
+						<div class="num">109</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">279</div>
+						<div class="name">Ds</div>
+						<div class="num">110</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">281</div>
+						<div class="name">Rg</div>
+						<div class="num">111</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_transmition">
+						<div class="weight">285</div>
+						<div class="name">Cn</div>
+						<div class="num">112</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">284</div>
+						<div class="name">Uut</div>
+						<div class="num">113</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">289</div>
+						<div class="name">Fl</div>
+						<div class="num">114</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">288</div>
+						<div class="name">Uup</div>
+						<div class="num">115</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem metal_pauvre">
+						<div class="weight">293</div>
+						<div class="name">Lp</div>
+						<div class="num">116</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem halogene">
+						<div class="weight">294</div>
+						<div class="name">Uus</div>
+						<div class="num">117</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem gaz_noble">
+						<div class="weight">294</div>
+						<div class="name">Uuo</div>
+						<div class="num">118</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<p></p>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">138.906</div>
+						<div class="name">La</div>
+						<div class="num">57</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">140.116</div>
+						<div class="name">Ce</div>
+						<div class="num">58</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">140.908</div>
+						<div class="name">Pr</div>
+						<div class="num">59</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">144.242</div>
+						<div class="name">Nd</div>
+						<div class="num">60</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">145</div>
+						<div class="name">Pm</div>
+						<div class="num">61</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">150.36</div>
+						<div class="name">Sm</div>
+						<div class="num">62</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">151.964</div>
+						<div class="name">Eu</div>
+						<div class="num">63</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">157.25</div>
+						<div class="name">Gd</div>
+						<div class="num">64</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">158.925</div>
+						<div class="name">Tb</div>
+						<div class="num">65</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">162.5</div>
+						<div class="name">Dy</div>
+						<div class="num">66</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">164.930</div>
+						<div class="name">Ho</div>
+						<div class="num">67</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">167.259</div>
+						<div class="name">Er</div>
+						<div class="num">68</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">168.934</div>
+						<div class="name">Tm</div>
+						<div class="num">69</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">173.054</div>
+						<div class="name">Yb</div>
+						<div class="num">70</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem lanthanide">
+						<div class="weight">174.967</div>
+						<div class="name">Lu</div>
+						<div class="num">71</div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">227</div>
+						<div class="name">Ac</div>
+						<div class="num">89</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">232.038</div>
+						<div class="name">Th</div>
+						<div class="num">90</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">231.036</div>
+						<div class="name">Pa</div>
+						<div class="num">91</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">238.036</div>
+						<div class="name">U</div>
+						<div class="num">92</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">237</div>
+						<div class="name">Np</div>
+						<div class="num">93</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">244</div>
+						<div class="name">Pu</div>
+						<div class="num">94</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">243</div>
+						<div class="name">Am</div>
+						<div class="num">95</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">247</div>
+						<div class="name">Cm</div>
+						<div class="num">96</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">247</div>
+						<div class="name">Bk</div>
+						<div class="num">97</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">251</div>
+						<div class="name">Cf</div>
+						<div class="num">98</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">252</div>
+						<div class="name">Es</div>
+						<div class="num">99</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">257</div>
+						<div class="name">Fm</div>
+						<div class="num">100</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">258</div>
+						<div class="name">Md</div>
+						<div class="num">101</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">259</div>
+						<div class="name">No</div>
+						<div class="num">102</div>
+					</div>
+				</td>
+				<td>
+					<div class="elem actinide">
+						<div class="weight">262</div>
+						<div class="name">Lr</div>
+						<div class="num">103</div>
+					</div>
+				</td>
+	
+			</tr>
+			
+
+			<tr>
+	
+			</tr>
+		</table>
+
+	</body>
+</html>
