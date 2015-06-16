@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Day of the 42</title>
+		<link rel="stylesheet" type="text/css" href="doft.css">
+	</head>
+	<body>
+
+		<div class="interface header">
+			<img src="resources/day_of_the_42.png" class="banner">
+			<img src="resources/loupe.png" class="loupe">
+
+			<a href="http://www.disney.com"><img src="resources/reload.png" class="reload" title="Recommencer au début"></a>
+
+			<a href="http://www.relaischateaux.com"><img src="resources/close.gif" class="close" title="Déconnecter"></a>
+
+		</div>
+
+		<div class="interface view">
+			<img src="resources/cluster.jpg" class="cluster" usemap="#cluster_map">
+			<map name="cluster_map">
+				<area shape="poly" coords="320,330,380,340,450,390,450,520,330,520" href="http://www.ikea.com" title="Chaise" />
+				<area shape="poly" coords="790,315,975,330,975,460,790,430" href="http://www.apple.com" title="Pomme" />
+			</map>
+		</div>
+
+		<div class="interface action-menu left_side">
+			<img src="resources/arrow.png" class="actions" title="Avancer">
+			<img src="resources/main.png" class="actions" title="Prendre">
+			<img src="resources/oeil.png" class="actions selected" title="Regarder">
+			<img src="resources/outil.png" class="actions" title="Utiliser">
+			<img src="resources/chat-icon.png" class="actions" title="Parler">
+		</div>
+
+		<div class="interface action-menu right_side">
+			<img src="resources/book.png" class="book" title="Livre">
+			<img src="resources/towel.png" class="towel" title="Serviette">
+			<div class="wall" title="Mur"></div>
+		</div>
+
+		<div class="interface dialog">
+			<p>
+			Vous <strong>entrez</strong> alors dans une grande piece remplie d'<div class="floaty_text">ordinateurs</div><div style="position:relative; left: 114px; top: 2px">...</div>
+			<i>
+				- Bonjour, vous &ecirc;tes nouveau ici ?
+			</i>
+			</p>
+			<form id="form_thingy">
+				<input id="form_text" size="65" type="text" name="input" value="" title="Que faire ?">
+				<input type="submit" value="Repondre" title="Allez, je me lance !" class="btn">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,224 @@
+body {
+	background-color: #505050;
+}
+
+.interface {
+	background-color: #8F8F8F;
+	border-radius: 10px;
+	box-shadow: 10px 10px 6px 0px;
+	position: absolute;
+}
+
+/*********************************************************\
+*	HEADER
+\*********************************************************/
+.header {
+	height: 137px;
+	width: 1420px;
+
+	left: 234px;
+	top: 18px;
+}
+
+.banner{
+	position: relative;
+
+	margin-top: 10px;
+	margin-left: 10px;
+
+	height: 110px;
+}
+
+.loupe {
+	position: absolute;
+
+	top: 10px;
+	right: 30px;
+
+}
+
+.reload {
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+
+	height: 20px;
+	width: 20px;
+
+	float: right;
+}
+
+.close {
+	position: absolute;
+
+	bottom: 10px;
+	right: 11px;
+
+	float: right;
+}
+
+/*********************************************************\
+*	VIEW
+\*********************************************************/
+
+.view {
+	top: 175px;
+	left: 434px;
+
+	padding: 10px;
+
+	width: 1000px;
+	height: 562px;
+}
+
+.cluster {
+	width: 1000px;
+	height: 562px;
+}
+
+/*********************************************************\
+*	ACTIONS
+\*********************************************************/
+.action-menu {
+	height: 413px;
+	width: 140px;
+
+	top: 175px;
+	padding-top: 11px;
+}
+/*	LEFT	*/
+
+.left_side {
+	left: 264px;
+}
+
+.actions {
+	width: 70px;
+	height: 70px;
+
+	margin-left: 29px;
+	padding: 3px;
+
+}
+
+.selected {
+	height: 65px;
+	border: 5px solid red;
+	padding: 0;
+	margin: -2px 0 -2px 27px;	
+}
+
+/*	RIGHT	*/
+.right_side {
+	right: 263px;
+}
+
+.book {
+	height: 96px;
+	width: 70px;
+
+	margin-left: 35px;
+	margin-top: 4px;
+}
+
+.towel {
+	height: 52px;
+	width: 70px;
+
+	margin-left: 35px;
+	margin-top: 6px;
+}
+
+.wall {
+	background-image: url("resources/brick.jpg");
+
+	width: 120px;
+	height: 70px;
+
+	margin-left: 10px;
+	margin-top: 1px;
+
+}
+/*********************************************************\
+*	DIALOG
+\*********************************************************/
+
+.dialog {
+	background-color: #87FE88;
+
+	width: 520px;
+	height: 170px;
+
+	left: 189px;
+	top: 681px;
+
+	display: inline-block;
+}
+
+.dialog p {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: inline;
+    padding: 5px 0px 0px 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+#form_thingy
+{
+	margin-left: 10px;
+}
+.btn {
+	background-color: #ECECEC;
+	
+	height: 21px;
+	width: 78px;
+
+	font-size: 13px;
+	line-height: 10px;
+
+	margin-left: 3px;
+}
+
+#form_text
+{
+    box-shadow: 0px 0px 0px 000000;
+	width: 380px;
+	height: 17px;
+}
+.dialog strong {
+    position: relative;
+    display: inline;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: Palatino,serif;
+}
+
+.dialog .floaty_text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-shadow: 7px 4px 4px rgba(255,0,0,0.6);
+}
+
+.dialog i {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    display: inline;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+
+
