@@ -1,91 +1,62 @@
 #!/usr/bin/php
-<?php
-	
-	function array_insert($tab, $value, $index)
+<?
+
+function is_alpha($c)
+{
+	return ($c >= 'a' && $c <= 'z');
+}
+
+function ccmp($c1, $c2)
+{
+	$c1 = strtolower($c1);
+	$c2 = strtolower($c2);
+	if (is_alpha($c1))
+		$char1 = 1;
+	else if (is_numeric($c1))
+		$char1 = 2;
+	else
+		$char1 = 3;
+	if (is_alpha($c2))
+		$char2 = 1;
+	else if (is_numeric($c2))
+		$char2 = 2;
+	else
+		$char2 = 3;
+	if ($char1 != $char2)
+		return ($char1 - $char2);
+	return (strcmp($c1, $c2));
+}
+function cmp($str1, $str2)
+{
+	while ($j < strlen($str1) && $j < strlen($str2))
 	{
-		$tmp = array_slice($tab, $index);
-		array_splice($tab, $index);
-		array_push($tab, $value);
-		return (array_merge($tab, $tmp));
+		if (ccmp($str1[$j], $str2[$j]) > 0)
+			return (1);
+		if (ccmp($str1[$j], $str2[$j]) < 0)
+			return (-1);
+		$j++;
 	}
+	if ($j < strlen($str1))
+		return (1);
+	if ($j < strlen($str2))
+		return (-1);
+	return (0);
+}
 
-	function is_alpha($c)
-	{
-		return (strtolower($c) >= 'a' && strtolower($c) <= 'z');
-	}
-
-	function sorting($tab, $str)
-	{
-		$i = 0;
-
-		while ($str[$i])
-		{
-			$index = 0;
-			while ($tab[$index])
-			{
-				$strn = ord($str[$i]);
-				$tabn = ord($tab[$index][$i]);
-				if (is_alpha($str[$i]))
-					$strn -= 1000;
-				if (is_alpha($tab[$index][$i]))
-					$tabn -= 1000;
-				if ($strn < $tabn)
-				{
-					echo "\t$strn < $tabn => $str[$i] < ".$tab[$index][$i]."\n";
-				$tab = array_insert($tab, $str, $index);
-				echo "## Debug SUP ##\n";
-				echo "=> $str\n";
-				var_dump($tab);
-				echo "###########\n\n";
-					return ($tab);
-				}
-				else if ($strn > $tabn)
-				{
-					echo "\t$strn > $tabn => $str[$i] > ".$tab[$index][$i]."\n";
-					while ($tab[$index])
-						$index++;
-				}
-				else if ($strn == $tabn)
-				echo "\t$strn = $tabn => $str[$i] = ".$tab[$index][$i]."\n";
-
-				$index++;
-			}
-			$i++;
-		}
-		array_push($tab, $str);
-		echo "## Debug END ##\n";
-		echo "=> $str\n";
-		var_dump($tab);
-		echo "###########\n\n";
-		return ($tab);
-	}
-
-	function ft_split($str)
-	{
-		$tmp = explode(' ', $str);
-		foreach ($tmp as $k => $v)
-		{
-			if ($v == NULL)
-				unset($tmp[$k]);
-		}
-		return ($tmp);
-	}
-
+if ($argv[1])
+{
 	array_shift($argv);
-	$tmp = array();
-	foreach ($argv as $val)
+	foreach ($argv as $arg)
 	{
-		$tmp = array_merge($tmp, ft_split($val));
+		$tab = explode(" ", $arg);
+		foreach ($tab as $str)
+		{
+			if (strlen($str))
+				$tab2[] .= $str;
+		}
 	}
-
-	$res = array();
-	foreach ($tmp as $val)
-	{
-		$res = sorting($res, $val);
-	}
-
-	// foreach ($res as $val)
-	// {
-	// 	echo $val."\n";
-	// }
+	usort($tab2, "cmp");
+	foreach ($tab2 as $str)
+		echo $str."\n";
+}
 ?>
