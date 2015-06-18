@@ -15,7 +15,6 @@
 		{
 			date_default_timezone_set('Europe/Paris');
 			// GMT+2 ou GMT+1 (Heure d'hiver ou heure d'été)
-			$day = explode('|', $day);
 			$month = explode('|', $month);
 			$m = $matches[3];
 			$m =  preg_replace(array("/^[Jj]/", "/^[Ff]/", "/^[Mm]/", "/^[Aa]/", "/^[Ss]/", "/^[Oo]/", "/^[Nn]/", "/^[Dd]/"), array("[Jj]", "[Ff]", "[Mm]", "[Aa]", "[Ss]", "[Oo]", "[Nn]", "[Dd]"), $m);
