@@ -1,0 +1,1 @@
+SELECT nom, prenom, LEFT(date_naissance, 10) AS "date de naissance" FROM fiche_personne WHERE YEAR(date_naissance) = '1989' ORDER BY nom ASC;

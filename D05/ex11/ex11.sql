@@ -1,0 +1,1 @@
+SELECT UPPER(p.nom) AS "NOM", p.prenom, a.prix FROM membre AS m INNER JOIN fiche_personne AS p ON m.id_fiche_perso = p.id_perso INNER JOIN abonnement AS a ON m.id_abo = a.id_abo WHERE a.prix > 42 ORDER BY p.nom ASC, p.prenom ASC;
