@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Balloon</title>
+		<style type="text/css">
+			.balloon {
+				width: 200px;
+				height: 200px;
+				border-radius: 200px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="balloon" class="balloon red"></div>
+
+		<script type="text/javascript">
+			
+			var div = document.getElementById('balloon');
+
+			var color = new Array('red', 'green', 'blue');
+
+			var i = 0;
+
+			var size =  getComputedStyle(div).height;
+			size = parseInt(size.substr(0,3));
+
+			div.onclick = function() {
+				i = i > 1 ? 0 : i + 1;
+
+				size += 10;
+				if (size > 420)
+					size = 200;
+
+				div.style.backgroundColor = color[i];
+				div.style.height = size + "px";
+				div.style.width = size + "px";
+				div.style.borderRadius = size + "px";
+			};
+
+			div.onmouseleave = function() {
+				i = i < 1 ? 2 : i - 1;
+
+
+				size -= 5;
+				if (size < 200)
+					size = 200;
+
+				div.style.backgroundColor = color[i];
+				div.style.height = size + "px";
+				div.style.width = size + "px";
+				div.style.borderRadius = size + "px";
+			}
+		</script>
+	</body>
+</html>
