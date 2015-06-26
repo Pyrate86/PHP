@@ -1,0 +1,28 @@
+
+<-- Weapon Class Documentation
+#	Weapon(	name, charges, scope, effect);
+#
+############################
+#	Attributes
+#########################
+#
+# 	string	name		:	Weapon's name
+#
+# 	int		charges		:	Number of charges
+#
+# 	array		scope	: 	Scope of the weapon.
+#		array must containe the following keys and values.
+#		'short'	=> array ('min' => int, 'max' => int)
+# 		'inter'	=> array ('min' => int, 'max' => int)
+# 		'long'	=> array ('min' => int, 'max' => int)
+#
+# 	Effect	effect	:	Effect of the weapon.
+#		Only one effect by weapon.
+#
+############################
+#	Methodes
+#########################
+#
+#
+#
+------------------------------------------------------------------------------>

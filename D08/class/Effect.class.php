@@ -1,7 +1,6 @@
-	// 	$this-> = $value;
 <?php
 
-Class Basic {
+Class Effect {
 
 /*###########################################################################\
 |#		Attribute															#|
@@ -9,13 +8,15 @@ Class Basic {
 
 	public static $verbose = FALSE;
 
+	protected $_name;
+
 /*---------------------------------------------------------------------------\
 ||		CONST && DEST														||
 \---------------------------------------------------------------------------*/
 
 	public function __construct(array $kwargs)
 	{
-
+		static::setName("Effect's name");
 		if (self::$verbose)
 			echo $this." constructed".PHP_EOL;
 	}
@@ -27,7 +28,7 @@ Class Basic {
 	}
 
 /****************************************************************************\
-|*		Public methods														*|
+|*		Public methods																*|
 \****************************************************************************/
 
 	public function __toString()
@@ -37,7 +38,7 @@ Class Basic {
 	}
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\
-||		Private methods														||
+||		Private methods																||
 \|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 
@@ -59,20 +60,20 @@ Class Basic {
 //		GETTERS																//
 ////////////////////////////////////////////////////////////////////////////*/
 
-	// public function get ()
-	// {
-	// 	return $this->;
-	// }
+	public function getName ()
+	{
+		return $this->_name;
+	}
 
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\		SETTERS																\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-	// public function set ($value)
-	// {
-	// 	$this-> = $value;
-	// }
+	public function setName ($value)
+	{
+		$this->_name = $value;
+	}
 
 }
 

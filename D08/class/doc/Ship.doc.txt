@@ -1,0 +1,39 @@
+
+<-- Ship Class Documentation
+#	Ship(type, name, sprite, size, hull, engine, speed, maneuver, shield, weapon)
+#
+############################
+#	Attributes
+#########################
+#
+#	string	type		: Ship's type.
+#
+#	string	name 		: Name of the ship. MUST BE BADASS !
+#
+#	string	sprite		: Path to the sprite of the ship.
+#
+#	array	size		: Size of the ship
+#		array must containe the following keys and values :
+#		'width' => int
+#		'height' => int
+#
+#	int		hull		: Th hull of the ship.
+#
+#	int		engine		: PP of the ship (engine points).
+#
+#	int		speed		: Speed of the ship.
+#
+#	int		maneuver	: Ship's maneuverability.
+#
+#	int		shield		: Shield points of the ship.
+#
+#	Weapon	weapon		: The weapon of the ship.
+#		Only one weapon per ship.
+#
+############################
+#	Methodes
+#########################
+#
+#
+#
+------------------------------------------------------------------------------>

@@ -1,0 +1,65 @@
+table {
+	border-collapse: collapse;
+}
+.cell {
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+}
+
+.empty {
+	background-color: black;
+}
+
+.fleet_1 {
+	background-color: lightblue;
+}
+
+.fleet_2 {
+	background-color: orange;
+}
+
+.scraps {
+	background-color: orange;
+}
+
+.active {
+	background-color: green;
+}
+
+.player	{
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	width: 350px;
+	vertical-align: top;
+
+}
+
+.playable {
+
+	color: green;
+}
+
+.played {
+	color: red;
+}
+
+.player_1 {
+	background-color: lightblue;
+}
+
+.player_2 {
+	background-color: orange;
+}
+
+.active_ship {
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	width: 725px;
+	vertical-align: top;
+}
