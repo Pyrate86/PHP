@@ -10,6 +10,15 @@ function setCookie() {
 	document.cookie = "todo_list=" + ft_list.innerHTML + expires;
 };
 
+function delTodo() {
+	var todo = document.getElementById("todo");
+	todo.onclick = function() {
+		if (confirm("Delete " + todo.firstChild.nodeValue))
+		ft_list.removeChild(todo);
+		setCookie();
+	};
+
+}
 
 function getCookie() {
     var name = "todo_list=";
@@ -21,6 +30,7 @@ function getCookie() {
         if (c.indexOf(name) == 0)
         	ft_list.innerHTML = c.substring(name.length,c.length);
     }
+    delTodo();
 };
 
 button.onclick = function() {
@@ -34,13 +44,7 @@ button.onclick = function() {
 		ft_list.insertBefore(div, ft_list.firstChild);
 		setCookie();
 	}
-
-	var todo = document.getElementById("todo");
-	todo.onclick = function() {
-		if (confirm("Delete " + todo.firstChild.nodeValue))
-		ft_list.removeChild(todo);
-		setCookie();
-	};
+    delTodo();
 };
 
 window.onload = getCookie();
