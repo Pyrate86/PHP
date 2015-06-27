@@ -1,0 +1,46 @@
+/*GENERERAL*/
+
+body
+{
+	background-color: #E4E5E9;
+
+}
+
+/*GESTION DES COLONNES*/
+
+.row 
+{
+	background-color: #FFFFFF;
+	margin-top: 10%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.col-sm-6
+{
+	
+	border-radius: 20px;
+}
+
+/*GESTION DES IMAGES*/
+
+.display_img
+{
+	height: 100px;
+}
+
+.label
+{
+	margin-right: 1%;
+}
+
+.move_you
+{
+	margin-top: 3%;
+}
+
+.buttn_float_knowmore
+{
+	float: right;
+	margin-bottom: 0%;
+}

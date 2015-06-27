@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc</title>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<input type="text" id="left" />
+
+<select id="op">
+  <option value="add">+</option>
+  <option value="sub">-</option>
+  <option value="mult">*</option>
+  <option value="divi">/</option>
+  <option value="modulo">%</option>
+</select>
+<input type="text" id="right" />
+
+<input type="submit" value="Try me" id="button" />
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		var left = $('#left');
+		var op = $('#op');
+		var right = $('#right');
+		var button = $('#button');
+
+		function is_uint(value){ 
+			if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
+				if (value < 0)
+					return false;
+				return true;
+			}
+			else 
+				return false;
+		}
+
+		$(button).click(function() {
+			if (!is_uint($(left).val()) || !is_uint($(right).val())) {
+				alert("Error :(");
+				return ;
+			}
+			if ((op.val() == 'modulo' || op.val() == 'divi') && $(right).val() == 0 ) {
+				alert( "It's over 9000!");
+				console.log( "It's over 9000!");
+				return ;
+			}
+
+			var a = parseInt($(left).val());
+			var b = parseInt($(right).val());
+
+			switch($(op).val()) {
+				case 'add':
+					var res = a + b;
+					break;
+
+				case 'sub':
+					var res = a - b;
+					break;
+
+				case 'mult':
+					var res = a * b;
+					break;
+
+				case 'divi':
+					var res = a / b;
+					/*res = parseInt(res);*/
+					break;
+
+				case 'modulo':
+					var res = a % b;
+					break;
+
+				default:
+					break;
+			}
+			alert(res);
+			console.log(res);
+		});
+
+		setInterval(function(){	alert("Please, use me..."); }, 30000);
+	});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+#total
+{
+	float: right;
+}
+
+.badge2
+{
+	background-color: grey;
+	margin-top: -5%;
+	float: right;
+	margin-right: 10%;
+}
+.icon
+{
+	width: 5%;
+	/*float: right;*/
+}
+
+.test
+{
+	width: 360px;
+}
+
+.badge_float
+{
+	float: right;
+	margin-right: 2%;
+	margin-top: -5%;
+}
+
+.btn_buy_right
+{
+	float: right;
+
+}
+
+.btn_buy_left
+{
+	float: left;
+
+}
+
+.cracra
+{
+	margin-top:13%;
+}
+
+.deglon
+{
+	margin-left:-10%;
+}
+
+.minilog
+{
+	margin-top:-10%;
+}

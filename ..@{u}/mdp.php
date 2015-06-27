@@ -1,0 +1,1 @@
+<?php $host = "localhost"; $user = "root"; $userpass = "spoing"; ?>

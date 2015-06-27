@@ -1,0 +1,37 @@
+.list-group
+{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.mini_img
+{
+	height: 50px;
+}
+
+.title_basket 
+{
+	margin-left: 10%;
+}
+
+.title
+{
+	margin-left: 10%;
+}
+
+.center{
+	width: 120px;
+	height: 40px;
+	float: right;
+	margin-right: 10%;
+}
+
+.button_float_left
+{
+	margin-left: 10%;
+}
+
+.button_float_right
+{
+	margin-right: 10%;
+}
